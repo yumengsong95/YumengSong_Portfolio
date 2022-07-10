@@ -140,6 +140,60 @@ footer p{
 .school {
     font-weight: bold;
 }
+.contact{
+    display:flex;
+}
+.contact_form{
+    width: 50%;
+}
+.contact_info{
+    width: 50%;
+}
+label {
+    font-size: 1.2em;
+    margin-bottom: 0.5vw;
+    display: block;
+}
+input {
+    display: block;
+    border: none;
+    margin-bottom: 0.5vw;
+    border-radius: 3px;
+    line-height: 2;
+    padding: 0 0.5vw;
+    width: 15vw;
+    font-family: var(--content-font);
+}
+select {
+    border: none;
+    display: block;
+    margin-bottom: 0.5vw;
+    border-radius: 3px;
+    padding: 0.5vw;
+    width: 15vw;
+    font-family: var(--content-font);
+}
+textarea{
+    border: none;
+    display: block;
+    margin-bottom:1vw;
+    border-radius: 3px;
+    padding:0.5vw;
+    width: 15vw;
+    height: 10vh;
+    font-family: var(--content-font);
+}
+.submit{
+    width :30%;
+    background-color: var(--teal);
+    font-size: 1.3em;
+    font-weight: bold;
+
+}
+.submit:hover{
+    background-color: var(--orange);
+    color: white;
+}
 @media screen and (max-width: 1200px) {
 	body {
 		width: 80vw;
@@ -147,11 +201,6 @@ footer p{
     nav a{
         width: 25%;
     }
-    .past_project{
-    width: 80%;
-    }
-}
-@media screen and (max-width: 1200px) {
     .project_desc{
         margin: 0;
         margin-top: 2vw;
@@ -161,5 +210,13 @@ footer p{
     }
     .past_project{
         padding: 3vw;
+        width: 80%;
+    }
+    .contact{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    input, select, textarea{
+        width: 100%;
     }
 }
