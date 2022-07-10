@@ -197,6 +197,26 @@ textarea{
 .image {
     margin: 2vw 0;
 }
+.pannel img{
+    width: 33%;
+}
+.pannel{
+    display: flex;
+    justify-content: space-between;
+}
+.banner{
+    width: 30%;
+}
+.frame{
+    width: 40%;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+}
+.icon img{
+    width: 13%;
+}
 @media screen and (max-width: 1200px) {
 	body {
 		width: 80vw;
